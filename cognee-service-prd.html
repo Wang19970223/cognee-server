@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)file:///C:/Users/sesa527615/AppData/Local/Temp/crossnote202628-13344-1knv9rq.wcgb.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>deepseek_markdown_20260308_7649cc</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="./cognee-service-prd_files/katex.min.css">
+      
+      
+      <script type="text/javascript" src="./cognee-service-prd_files/mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="cognee-knowledge-service---产品需求文档-prd">Cognee Knowledge Service - 产品需求文档 (PRD) </h1>
+<p><strong>版本</strong>: 1.0<br>
+<strong>状态</strong>: 草案<br>
+<strong>最后更新</strong>: 2026-03-08<br>
+<strong>产品经理</strong>: [待定]<br>
+<strong>技术负责人</strong>: [待定]</p>
+<hr>
+<h2 id="-文档修订历史">📋 文档修订历史 </h2>
+<table>
+<thead>
+<tr>
+<th>版本</th>
+<th>日期</th>
+<th>修改内容</th>
+<th>作者</th>
+<th>审核人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>2026-03-08</td>
+<td>初始版本创建</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-1-产品概述">🎯 1. 产品概述 </h2>
+<h3 id="11-项目背景">1.1 项目背景 </h3>
+<p>Everything for Copilot 框架目前已定义了 14 个核心用户场景，涵盖了需求分析、设计测试、开发调试、代码管理、知识沉淀等多个环节。POC 验证表明，Cognee 作为知识图谱引擎，能够显著提升知识检索的准确性和深度推理能力。</p>
+<p>然而，目前 Cognee 的能力还停留在本地脚本调用层面，无法被 GitHub Copilot 无缝集成，也无法作为统一的知识服务被多个 Skill 和 Agent 共享调用。</p>
+<h3 id="12-产品目标">1.2 产品目标 </h3>
+<p>构建一个独立的 <strong>Cognee Knowledge Service</strong>，为 Everything for Copilot 框架提供统一的知识图谱服务接口，实现：</p>
+<ul>
+<li><strong>知识检索</strong>：支持自然语言查询，返回结构化的知识结果</li>
+<li><strong>知识更新</strong>：支持增量更新和全量重建</li>
+<li><strong>知识维护</strong>：提供知识健康度监控和管理能力</li>
+<li><strong>无缝集成</strong>：GitHub Copilot Skill 可通过 REST API 调用该服务</li>
+</ul>
+<h3 id="13-核心价值">1.3 核心价值 </h3>
+<table>
+<thead>
+<tr>
+<th>价值维度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>统一知识入口</strong></td>
+<td>所有 Skill/Agent 通过同一个服务访问知识，避免重复建设</td>
+</tr>
+<tr>
+<td><strong>知识共享</strong></td>
+<td>Prompt Recipes、技术决策、业务术语等知识可在服务层融合</td>
+</tr>
+<tr>
+<td><strong>降低 Skill 复杂度</strong></td>
+<td>Skill 只需关注业务逻辑，知识检索由服务层封装</td>
+</tr>
+<tr>
+<td><strong>可观测性</strong></td>
+<td>可监控知识使用情况、健康度，为 OKR 审视提供数据</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-2-用户场景">🧩 2. 用户场景 </h2>
+<h3 id="21-核心用户角色">2.1 核心用户角色 </h3>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>描述</th>
+<th>主要场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>开发者</strong></td>
+<td>使用 GitHub Copilot 进行日常开发</td>
+<td>场景 5/6/7/8/9</td>
+</tr>
+<tr>
+<td><strong>Tech Leader</strong></td>
+<td>负责代码审查、技术决策</td>
+<td>场景 4/10/14</td>
+</tr>
+<tr>
+<td><strong>BA/产品经理</strong></td>
+<td>负责需求分析和用户故事分解</td>
+<td>场景 1/2</td>
+</tr>
+<tr>
+<td><strong>QA 工程师</strong></td>
+<td>负责测试用例设计和执行</td>
+<td>场景 3/6/13</td>
+</tr>
+<tr>
+<td><strong>CCG 成员</strong></td>
+<td>负责知识沉淀和 Recipe 维护</td>
+<td>场景 11/14</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-关键用户场景映射">2.2 关键用户场景映射 </h3>
+<table>
+<thead>
+<tr>
+<th>场景 ID</th>
+<th>场景名称</th>
+<th>对知识服务的需求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>场景 1</td>
+<td>从 Jira Issue 到完整 PRD</td>
+<td>检索历史相似需求、业务术语</td>
+</tr>
+<tr>
+<td>场景 2</td>
+<td>需求澄清与用户故事分解</td>
+<td>检索相关 Epic 的分解模式</td>
+</tr>
+<tr>
+<td>场景 3</td>
+<td>从 PRD 到测试用例脑图</td>
+<td>检索历史 Bug 模式、边界条件</td>
+</tr>
+<tr>
+<td>场景 5</td>
+<td>TDD 流程实现新功能</td>
+<td>检索相关代码示例、架构决策</td>
+</tr>
+<tr>
+<td>场景 8</td>
+<td>Java 应用智能调试</td>
+<td>检索相似 Bug 的解决方案</td>
+</tr>
+<tr>
+<td>场景 10</td>
+<td>代码审查与质量保障</td>
+<td>检索代码规范、历史审查记录</td>
+</tr>
+<tr>
+<td>场景 11</td>
+<td>Prompt Recipes 与隐性知识固化</td>
+<td>知识入库、检索、更新</td>
+</tr>
+<tr>
+<td>场景 12</td>
+<td>知识库检索与即时问答</td>
+<td><strong>核心场景</strong>：自然语言知识检索</td>
+</tr>
+<tr>
+<td>场景 14</td>
+<td>上下文管理系统</td>
+<td><strong>核心场景</strong>：五层上下文统一检索</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="️-3-系统架构">🏗️ 3. 系统架构 </h2>
+<h3 id="31-整体架构图">3.1 整体架构图 </h3>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1772956201799" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 2073.046875px;" viewBox="0 0 2073.046875 596.0441284179688" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1772956201799{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-1772956201799 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-1772956201799 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-1772956201799 .error-icon{fill:#552222;}#mermaid-1772956201799 .error-text{fill:#552222;stroke:#552222;}#mermaid-1772956201799 .edge-thickness-normal{stroke-width:1px;}#mermaid-1772956201799 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1772956201799 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1772956201799 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-1772956201799 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1772956201799 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1772956201799 .marker{fill:#333333;stroke:#333333;}#mermaid-1772956201799 .marker.cross{stroke:#333333;}#mermaid-1772956201799 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1772956201799 p{margin:0;}#mermaid-1772956201799 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1772956201799 .cluster-label text{fill:#333;}#mermaid-1772956201799 .cluster-label span{color:#333;}#mermaid-1772956201799 .cluster-label span p{background-color:transparent;}#mermaid-1772956201799 .label text,#mermaid-1772956201799 span{fill:#333;color:#333;}#mermaid-1772956201799 .node rect,#mermaid-1772956201799 .node circle,#mermaid-1772956201799 .node ellipse,#mermaid-1772956201799 .node polygon,#mermaid-1772956201799 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1772956201799 .rough-node .label text,#mermaid-1772956201799 .node .label text,#mermaid-1772956201799 .image-shape .label,#mermaid-1772956201799 .icon-shape .label{text-anchor:middle;}#mermaid-1772956201799 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1772956201799 .rough-node .label,#mermaid-1772956201799 .node .label,#mermaid-1772956201799 .image-shape .label,#mermaid-1772956201799 .icon-shape .label{text-align:center;}#mermaid-1772956201799 .node.clickable{cursor:pointer;}#mermaid-1772956201799 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#mermaid-1772956201799 .arrowheadPath{fill:#333333;}#mermaid-1772956201799 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1772956201799 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1772956201799 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-1772956201799 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-1772956201799 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-1772956201799 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-1772956201799 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1772956201799 .cluster text{fill:#333;}#mermaid-1772956201799 .cluster span{color:#333;}#mermaid-1772956201799 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1772956201799 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-1772956201799 rect.text{fill:none;stroke-width:0;}#mermaid-1772956201799 .icon-shape,#mermaid-1772956201799 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-1772956201799 .icon-shape p,#mermaid-1772956201799 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#mermaid-1772956201799 .icon-shape rect,#mermaid-1772956201799 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-1772956201799 .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#mermaid-1772956201799 .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#mermaid-1772956201799 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker id="mermaid-1772956201799_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1772956201799_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1772956201799_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1772956201799_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1772956201799_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1772956201799_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"><g class="cluster" id="subGraph4" data-look="classic"><rect style="" x="8" y="162" width="2057.046875" height="426.0441207885742"></rect><g class="cluster-label" transform="translate(941.1328125, 162)"><foreignobject width="190.78125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Cognee Knowledge Service</p></span></div></foreignobject></g></g><g class="cluster" id="subGraph0" data-look="classic"><rect style="" x="61.95703125" y="8" width="1717.609375" height="104"></rect><g class="cluster-label" transform="translate(849.37109375, 8)"><foreignobject width="142.78125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>GitHub Copilot 环境</p></span></div></foreignobject></g></g><g class="cluster" id="数据源层" data-look="classic"><rect style="" x="123.07421875" y="445" width="1032.875" height="118.04412078857422"></rect><g class="cluster-label" transform="translate(607.51171875, 445)"><foreignobject width="64" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>数据源层</p></span></div></foreignobject></g></g><g class="cluster" id="知识图谱引擎" data-look="classic"><rect style="" x="1175.94921875" y="445" width="278" height="118.04412078857422"></rect><g class="cluster-label" transform="translate(1266.94921875, 445)"><foreignobject width="96" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>知识图谱引擎</p></span></div></foreignobject></g></g><g class="cluster" id="核心服务层" data-look="classic"><rect style="" x="203.23828125" y="291" width="1430.7109375" height="104"></rect><g class="cluster-label" transform="translate(878.59375, 291)"><foreignobject width="80" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>核心服务层</p></span></div></foreignobject></g></g></g><g class="edgePaths"><path d="M219.91,87L219.91,91.167C219.91,95.333,219.91,103.667,219.91,112C219.91,120.333,219.91,128.667,219.91,137C219.91,145.333,219.91,153.667,353.009,165.55C486.108,177.433,752.305,192.866,885.404,200.583L1018.503,208.3" id="L_Skill1_API_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Skill1_API_0" data-points="W3sieCI6MjE5LjkxMDE1NjI1LCJ5Ijo4N30seyJ4IjoyMTkuOTEwMTU2MjUsInkiOjExMn0seyJ4IjoyMTkuOTEwMTU2MjUsInkiOjEzN30seyJ4IjoyMTkuOTEwMTU2MjUsInkiOjE2Mn0seyJ4IjoxMDIyLjQ5NjA5Mzc1LCJ5IjoyMDguNTMxMTc4OTU1NjIwNH1d" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M510.137,87L510.137,91.167C510.137,95.333,510.137,103.667,510.137,112C510.137,120.333,510.137,128.667,510.137,137C510.137,145.333,510.137,153.667,594.866,165.096C679.595,176.524,849.053,191.049,933.782,198.311L1018.511,205.573" id="L_Skill2_API_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Skill2_API_0" data-points="W3sieCI6NTEwLjEzNjcxODc1LCJ5Ijo4N30seyJ4Ijo1MTAuMTM2NzE4NzUsInkiOjExMn0seyJ4Ijo1MTAuMTM2NzE4NzUsInkiOjEzN30seyJ4Ijo1MTAuMTM2NzE4NzUsInkiOjE2Mn0seyJ4IjoxMDIyLjQ5NjA5Mzc1LCJ5IjoyMDUuOTE1MDA5Nzg2NzUxODJ9XQ==" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M767.316,87L767.316,91.167C767.316,95.333,767.316,103.667,767.316,112C767.316,120.333,767.316,128.667,767.316,137C767.316,145.333,767.316,153.667,809.187,164.063C851.057,174.459,934.799,186.918,976.669,193.148L1018.54,199.377" id="L_Skill3_API_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Skill3_API_0" data-points="W3sieCI6NzY3LjMxNjQwNjI1LCJ5Ijo4N30seyJ4Ijo3NjcuMzE2NDA2MjUsInkiOjExMn0seyJ4Ijo3NjcuMzE2NDA2MjUsInkiOjEzN30seyJ4Ijo3NjcuMzE2NDA2MjUsInkiOjE2Mn0seyJ4IjoxMDIyLjQ5NjA5Mzc1LCJ5IjoxOTkuOTY1ODAwMTIwNzA1NDd9XQ==" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1024.316,87L1024.316,91.167C1024.316,95.333,1024.316,103.667,1024.316,112C1024.316,120.333,1024.316,128.667,1024.316,137C1024.316,145.333,1024.316,153.667,1031.148,161.673C1037.979,169.68,1051.642,177.36,1058.473,181.2L1065.304,185.04" id="L_Skill4_API_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Skill4_API_0" data-points="W3sieCI6MTAyNC4zMTY0MDYyNSwieSI6ODd9LHsieCI6MTAyNC4zMTY0MDYyNSwieSI6MTEyfSx7IngiOjEwMjQuMzE2NDA2MjUsInkiOjEzN30seyJ4IjoxMDI0LjMxNjQwNjI1LCJ5IjoxNjJ9LHsieCI6MTA2OC43OTEzMTYxMDU3NjkzLCJ5IjoxODd9XQ==" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1252.824,87L1252.824,91.167C1252.824,95.333,1252.824,103.667,1252.824,112C1252.824,120.333,1252.824,128.667,1252.824,137C1252.824,145.333,1252.824,153.667,1242.549,161.762C1232.275,169.857,1211.725,177.714,1201.451,181.643L1191.176,185.571" id="L_Agent1_API_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Agent1_API_0" data-points="W3sieCI6MTI1Mi44MjQyMTg3NSwieSI6ODd9LHsieCI6MTI1Mi44MjQyMTg3NSwieSI6MTEyfSx7IngiOjEyNTIuODI0MjE4NzUsInkiOjEzN30seyJ4IjoxMjUyLjgyNDIxODc1LCJ5IjoxNjJ9LHsieCI6MTE4Ny40Mzk2MDMzNjUzODQ1LCJ5IjoxODd9XQ==" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1431.27,87L1431.27,91.167C1431.27,95.333,1431.27,103.667,1431.27,112C1431.27,120.333,1431.27,128.667,1431.27,137C1431.27,145.333,1431.27,153.667,1395.241,163.791C1359.213,173.916,1287.156,185.832,1251.127,191.79L1215.099,197.748" id="L_Agent2_API_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Agent2_API_0" data-points="W3sieCI6MTQzMS4yNjk1MzEyNSwieSI6ODd9LHsieCI6MTQzMS4yNjk1MzEyNSwieSI6MTEyfSx7IngiOjE0MzEuMjY5NTMxMjUsInkiOjEzN30seyJ4IjoxNDMxLjI2OTUzMTI1LCJ5IjoxNjJ9LHsieCI6MTIxMS4xNTIzNDM3NSwieSI6MTk4LjQwMDkwNDM3MDI5NDl9XQ==" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1646.434,87L1646.434,91.167C1646.434,95.333,1646.434,103.667,1646.434,112C1646.434,120.333,1646.434,128.667,1646.434,137C1646.434,145.333,1646.434,153.667,1574.55,164.891C1502.667,176.116,1358.9,190.232,1287.017,197.29L1215.133,204.347" id="L_Agent3_API_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Agent3_API_0" data-points="W3sieCI6MTY0Ni40MzM1OTM3NSwieSI6ODd9LHsieCI6MTY0Ni40MzM1OTM3NSwieSI6MTEyfSx7IngiOjE2NDYuNDMzNTkzNzUsInkiOjEzN30seyJ4IjoxNjQ2LjQzMzU5Mzc1LCJ5IjoxNjJ9LHsieCI6MTIxMS4xNTIzNDM3NSwieSI6MjA0LjczODMzODk4ODA1MTM0fV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1211.152,238.757L1228.452,243.298C1245.751,247.838,1280.35,256.919,1297.65,265.626C1314.949,274.333,1314.949,282.667,1314.949,290.333C1314.949,298,1314.949,305,1314.949,308.5L1314.949,312" id="L_API_Query_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_API_Query_0" data-points="W3sieCI6MTIxMS4xNTIzNDM3NSwieSI6MjM4Ljc1NzQxMzI0OTIxMTM3fSx7IngiOjEzMTQuOTQ5MjE4NzUsInkiOjI2Nn0seyJ4IjoxMzE0Ljk0OTIxODc1LCJ5IjoyOTF9LHsieCI6MTMxNC45NDkyMTg3NSwieSI6MzE2fV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1022.496,225.948L969.796,232.623C917.096,239.299,811.697,252.649,758.997,263.491C706.297,274.333,706.297,282.667,706.297,290.333C706.297,298,706.297,305,706.297,308.5L706.297,312" id="L_API_Index_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_API_Index_0" data-points="W3sieCI6MTAyMi40OTYwOTM3NSwieSI6MjI1Ljk0ODE5OTI0ODI5OTE1fSx7IngiOjcwNi4yOTY4NzUsInkiOjI2Nn0seyJ4Ijo3MDYuMjk2ODc1LCJ5IjoyOTF9LHsieCI6NzA2LjI5Njg3NSwieSI6MzE2fV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1211.152,226.137L1262.785,232.781C1314.418,239.425,1417.684,252.712,1469.316,263.523C1520.949,274.333,1520.949,282.667,1520.949,290.333C1520.949,298,1520.949,305,1520.949,308.5L1520.949,312" id="L_API_Manage_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_API_Manage_0" data-points="W3sieCI6MTIxMS4xNTIzNDM3NSwieSI6MjI2LjEzNzQ4ODQwMDg2NjA2fSx7IngiOjE1MjAuOTQ5MjE4NzUsInkiOjI2Nn0seyJ4IjoxNTIwLjk0OTIxODc1LCJ5IjoyOTF9LHsieCI6MTUyMC45NDkyMTg3NSwieSI6MzE2fV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1281.459,370L1276.291,374.167C1271.122,378.333,1260.786,386.667,1255.617,395C1250.449,403.333,1250.449,411.667,1250.449,420C1250.449,428.333,1250.449,436.667,1250.449,444.333C1250.449,452,1250.449,459,1250.449,462.5L1250.449,466" id="L_Query_KG_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Query_KG_0" data-points="W3sieCI6MTI4MS40NTg4MzQxMzQ2MTU1LCJ5IjozNzB9LHsieCI6MTI1MC40NDkyMTg3NSwieSI6Mzk1fSx7IngiOjEyNTAuNDQ5MjE4NzUsInkiOjQyMH0seyJ4IjoxMjUwLjQ0OTIxODc1LCJ5Ijo0NDV9LHsieCI6MTI1MC40NDkyMTg3NSwieSI6NDcwfV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M1348.44,370L1353.608,374.167C1358.776,378.333,1369.113,386.667,1374.281,395C1379.449,403.333,1379.449,411.667,1379.449,420C1379.449,428.333,1379.449,436.667,1379.449,444.333C1379.449,452,1379.449,459,1379.449,462.5L1379.449,466" id="L_Query_Vector_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Query_Vector_0" data-points="W3sieCI6MTM0OC40Mzk2MDMzNjUzODQ1LCJ5IjozNzB9LHsieCI6MTM3OS40NDkyMTg3NSwieSI6Mzk1fSx7IngiOjEzNzkuNDQ5MjE4NzUsInkiOjQyMH0seyJ4IjoxMzc5LjQ0OTIxODc1LCJ5Ijo0NDV9LHsieCI6MTM3OS40NDkyMTg3NSwieSI6NDcwfV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M628.297,351.759L564.12,358.966C499.944,366.173,371.591,380.586,307.415,391.96C243.238,403.333,243.238,411.667,243.238,420C243.238,428.333,243.238,436.667,243.238,445.504C243.238,454.341,243.238,463.681,243.238,468.352L243.238,473.022" id="L_Index_Recipes_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Index_Recipes_0" data-points="W3sieCI6NjI4LjI5Njg3NSwieSI6MzUxLjc1OTE1MDY4NzkzNn0seyJ4IjoyNDMuMjM4MjgxMjUsInkiOjM5NX0seyJ4IjoyNDMuMjM4MjgxMjUsInkiOjQyMH0seyJ4IjoyNDMuMjM4MjgxMjUsInkiOjQ0NX0seyJ4IjoyNDMuMjM4MjgxMjUsInkiOjQ3Ny4wMjIwNjAzOTQyODcxfV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M628.297,359.276L599.764,365.23C571.23,371.184,514.164,383.092,485.631,393.213C457.098,403.333,457.098,411.667,457.098,420C457.098,428.333,457.098,436.667,457.098,445.504C457.098,454.341,457.098,463.681,457.098,468.352L457.098,473.022" id="L_Index_Decisions_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Index_Decisions_0" data-points="W3sieCI6NjI4LjI5Njg3NSwieSI6MzU5LjI3NjEzNDQ5MzI5ODg1fSx7IngiOjQ1Ny4wOTc2NTYyNSwieSI6Mzk1fSx7IngiOjQ1Ny4wOTc2NTYyNSwieSI6NDIwfSx7IngiOjQ1Ny4wOTc2NTYyNSwieSI6NDQ1fSx7IngiOjQ1Ny4wOTc2NTYyNSwieSI6NDc3LjAyMjA2MDM5NDI4NzF9XQ==" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M680.074,370L676.027,374.167C671.98,378.333,663.887,386.667,659.84,395C655.793,403.333,655.793,411.667,655.793,420C655.793,428.333,655.793,436.667,655.793,445.504C655.793,454.341,655.793,463.681,655.793,468.352L655.793,473.022" id="L_Index_Knowledge_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Index_Knowledge_0" data-points="W3sieCI6NjgwLjA3MzY5MjkwODY1MzgsInkiOjM3MH0seyJ4Ijo2NTUuNzkyOTY4NzUsInkiOjM5NX0seyJ4Ijo2NTUuNzkyOTY4NzUsInkiOjQyMH0seyJ4Ijo2NTUuNzkyOTY4NzUsInkiOjQ0NX0seyJ4Ijo2NTUuNzkyOTY4NzUsInkiOjQ3Ny4wMjIwNjAzOTQyODcxfV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M782.662,370L794.447,374.167C806.232,378.333,829.802,386.667,841.586,395C853.371,403.333,853.371,411.667,853.371,420C853.371,428.333,853.371,436.667,853.371,445.504C853.371,454.341,853.371,463.681,853.371,468.352L853.371,473.022" id="L_Index_Memory_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Index_Memory_0" data-points="W3sieCI6NzgyLjY2MjMzNDczNTU3NjksInkiOjM3MH0seyJ4Ijo4NTMuMzcxMDkzNzUsInkiOjM5NX0seyJ4Ijo4NTMuMzcxMDkzNzUsInkiOjQyMH0seyJ4Ijo4NTMuMzcxMDkzNzUsInkiOjQ0NX0seyJ4Ijo4NTMuMzcxMDkzNzUsInkiOjQ3Ny4wMjIwNjAzOTQyODcxfV0=" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path><path d="M784.297,354.768L828.739,361.474C873.181,368.179,962.065,381.589,1006.507,392.461C1050.949,403.333,1050.949,411.667,1050.949,420C1050.949,428.333,1050.949,436.667,1050.949,445.504C1050.949,454.341,1050.949,463.681,1050.949,468.352L1050.949,473.022" id="L_Index_Code_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Index_Code_0" data-points="W3sieCI6Nzg0LjI5Njg3NSwieSI6MzU0Ljc2ODM4MDcyNzg2MjF9LHsieCI6MTA1MC45NDkyMTg3NSwieSI6Mzk1fSx7IngiOjEwNTAuOTQ5MjE4NzUsInkiOjQyMH0seyJ4IjoxMDUwLjk0OTIxODc1LCJ5Ijo0NDV9LHsieCI6MTA1MC45NDkyMTg3NSwieSI6NDc3LjAyMjA2MDM5NDI4NzF9XQ==" marker-end="url(#mermaid-1772956201799_flowchart-v2-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="L_Skill1_API_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Skill2_API_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Skill3_API_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Skill4_API_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Agent1_API_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Agent2_API_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Agent3_API_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_API_Query_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_API_Index_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_API_Manage_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Query_KG_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Query_Vector_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Index_Recipes_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Index_Decisions_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Index_Knowledge_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Index_Memory_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Index_Code_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-Skill1-0" transform="translate(219.91015625, 60)"><rect class="basic label-container" style="fill:#e1f5ff !important" x="-122.953125" y="-27" width="245.90625" height="54"></rect><g class="label" style="" transform="translate(-92.953125, -12)"><rect></rect><foreignobject width="185.90625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>requirements-analyst skill</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Skill2-1" transform="translate(510.13671875, 60)"><rect class="basic label-container" style="fill:#e1f5ff !important" x="-117.2734375" y="-27" width="234.546875" height="54"></rect><g class="label" style="" transform="translate(-87.2734375, -12)"><rect></rect><foreignobject width="174.546875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>test-case-generator skill</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Skill3-2" transform="translate(767.31640625, 60)"><rect class="basic label-container" style="fill:#e1f5ff !important" x="-89.90625" y="-27" width="179.8125" height="54"></rect><g class="label" style="" transform="translate(-59.90625, -12)"><rect></rect><foreignobject width="119.8125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>kb-retriever skill</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Skill4-3" transform="translate(1024.31640625, 60)"><rect class="basic label-container" style="fill:#e1f5ff !important" x="-117.09375" y="-27" width="234.1875" height="54"></rect><g class="label" style="" transform="translate(-87.09375, -12)"><rect></rect><foreignobject width="174.1875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>code-review-expert skill</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Agent1-4" transform="translate(1252.82421875, 60)"><rect class="basic label-container" style="fill:#e8f5e9 !important" x="-61.4140625" y="-27" width="122.828125" height="54"></rect><g class="label" style="" transform="translate(-31.4140625, -12)"><rect></rect><foreignobject width="62.828125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>BA Agent</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Agent2-5" transform="translate(1431.26953125, 60)"><rect class="basic label-container" style="fill:#e8f5e9 !important" x="-67.03125" y="-27" width="134.0625" height="54"></rect><g class="label" style="" transform="translate(-37.03125, -12)"><rect></rect><foreignobject width="74.0625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Test Agent</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Agent3-6" transform="translate(1646.43359375, 60)"><rect class="basic label-container" style="fill:#e8f5e9 !important" x="-98.1328125" y="-27" width="196.265625" height="54"></rect><g class="label" style="" transform="translate(-68.1328125, -12)"><rect></rect><foreignobject width="136.265625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Code Review Agent</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-API-7" transform="translate(1116.82421875, 214)"><rect class="basic label-container" style="fill:#fff4e1 !important" x="-94.328125" y="-27" width="188.65625" height="54"></rect><g class="label" style="" transform="translate(-64.328125, -12)"><rect></rect><foreignobject width="128.65625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>REST API Gateway</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Query-8" transform="translate(1314.94921875, 343)"><rect class="basic label-container" style="fill:#ffecb3 !important" x="-78" y="-27" width="156" height="54"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject width="96" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>知识查询服务</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Index-9" transform="translate(706.296875, 343)"><rect class="basic label-container" style="fill:#ffecb3 !important" x="-78" y="-27" width="156" height="54"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject width="96" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>知识索引服务</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Manage-10" transform="translate(1520.94921875, 343)"><rect class="basic label-container" style="fill:#ffecb3 !important" x="-78" y="-27" width="156" height="54"></rect><g class="label" style="" transform="translate(-48, -12)"><rect></rect><foreignobject width="96" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>知识管理服务</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-KG-11" transform="translate(1250.44921875, 504.0220603942871)"><path d="M0,9.681372549019608 a39.5,9.681372549019608 0,0,0 79,0 a39.5,9.681372549019608 0,0,0 -79,0 l0,48.681372549019606 a39.5,9.681372549019608 0,0,0 79,0 l0,-48.681372549019606" class="basic label-container" style="" transform="translate(-39.5, -34.02205882352941)"></path><g class="label" style="" transform="translate(-32, -2)"><rect></rect><foreignobject width="64" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>知识图谱</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Vector-12" transform="translate(1379.44921875, 504.0220603942871)"><path d="M0,9.681372549019608 a39.5,9.681372549019608 0,0,0 79,0 a39.5,9.681372549019608 0,0,0 -79,0 l0,48.681372549019606 a39.5,9.681372549019608 0,0,0 79,0 l0,-48.681372549019606" class="basic label-container" style="" transform="translate(-39.5, -34.02205882352941)"></path><g class="label" style="" transform="translate(-32, -2)"><rect></rect><foreignobject width="64" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>向量索引</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Recipes-13" transform="translate(243.23828125, 504.0220603942871)"><rect class="basic label-container" style="" x="-85.1640625" y="-27" width="170.328125" height="54"></rect><g class="label" style="" transform="translate(-55.1640625, -12)"><rect></rect><foreignobject width="110.328125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Prompt Recipes</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Decisions-14" transform="translate(457.09765625, 504.0220603942871)"><rect class="basic label-container" style="" x="-78.6953125" y="-27" width="157.390625" height="54"></rect><g class="label" style="" transform="translate(-48.6953125, -12)"><rect></rect><foreignobject width="97.390625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>技术决策 ADR</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Knowledge-15" transform="translate(655.79296875, 504.0220603942871)"><rect class="basic label-container" style="" x="-70" y="-27" width="140" height="54"></rect><g class="label" style="" transform="translate(-40, -12)"><rect></rect><foreignobject width="80" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>领域知识库</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Memory-16" transform="translate(853.37109375, 504.0220603942871)"><rect class="basic label-container" style="" x="-77.578125" y="-27" width="155.15625" height="54"></rect><g class="label" style="" transform="translate(-47.578125, -12)"><rect></rect><foreignobject width="95.15625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Memory Bank</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Code-17" transform="translate(1050.94921875, 504.0220603942871)"><rect class="basic label-container" style="" x="-70" y="-27" width="140" height="54"></rect><g class="label" style="" transform="translate(-40, -12)"><rect></rect><foreignobject width="80" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>代码知识库</p></span></div></foreignobject></g></g></g></g></g></svg></div><h3 id="32-服务组件说明">3.2 服务组件说明 </h3>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>职责</th>
+<th>技术选型建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API Gateway</strong></td>
+<td>提供 RESTful API 接口，处理认证、限流、日志</td>
+<td>FastAPI / Flask + Gunicorn</td>
+</tr>
+<tr>
+<td><strong>知识查询服务</strong></td>
+<td>处理自然语言查询，调用 Cognee 图谱引擎</td>
+<td>Cognee + LiteLLM</td>
+</tr>
+<tr>
+<td><strong>知识索引服务</strong></td>
+<td>处理数据源更新，增量/全量构建图谱</td>
+<td>Cognee + 定时任务</td>
+</tr>
+<tr>
+<td><strong>知识管理服务</strong></td>
+<td>知识健康度监控、手动管理接口</td>
+<td>自定义实现</td>
+</tr>
+<tr>
+<td><strong>知识图谱</strong></td>
+<td>存储实体、关系和属性</td>
+<td>Neo4j / Kuzu（推荐）</td>
+</tr>
+<tr>
+<td><strong>向量索引</strong></td>
+<td>存储向量嵌入，支持相似度搜索</td>
+<td>LanceDB / Qdrant</td>
+</tr>
+<tr>
+<td><strong>数据源层</strong></td>
+<td>各类型知识的原始存储位置</td>
+<td>文件系统 / Git</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33-部署架构">3.3 部署架构 </h3>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1772956202035" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 938.08203125px;" viewBox="0 0 938.08203125 323" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#mermaid-1772956202035{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-1772956202035 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-1772956202035 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-1772956202035 .error-icon{fill:#552222;}#mermaid-1772956202035 .error-text{fill:#552222;stroke:#552222;}#mermaid-1772956202035 .edge-thickness-normal{stroke-width:1px;}#mermaid-1772956202035 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1772956202035 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1772956202035 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-1772956202035 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1772956202035 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1772956202035 .marker{fill:#333333;stroke:#333333;}#mermaid-1772956202035 .marker.cross{stroke:#333333;}#mermaid-1772956202035 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1772956202035 p{margin:0;}#mermaid-1772956202035 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#mermaid-1772956202035 .cluster-label text{fill:#333;}#mermaid-1772956202035 .cluster-label span{color:#333;}#mermaid-1772956202035 .cluster-label span p{background-color:transparent;}#mermaid-1772956202035 .label text,#mermaid-1772956202035 span{fill:#333;color:#333;}#mermaid-1772956202035 .node rect,#mermaid-1772956202035 .node circle,#mermaid-1772956202035 .node ellipse,#mermaid-1772956202035 .node polygon,#mermaid-1772956202035 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#mermaid-1772956202035 .rough-node .label text,#mermaid-1772956202035 .node .label text,#mermaid-1772956202035 .image-shape .label,#mermaid-1772956202035 .icon-shape .label{text-anchor:middle;}#mermaid-1772956202035 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-1772956202035 .rough-node .label,#mermaid-1772956202035 .node .label,#mermaid-1772956202035 .image-shape .label,#mermaid-1772956202035 .icon-shape .label{text-align:center;}#mermaid-1772956202035 .node.clickable{cursor:pointer;}#mermaid-1772956202035 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#mermaid-1772956202035 .arrowheadPath{fill:#333333;}#mermaid-1772956202035 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#mermaid-1772956202035 .flowchart-link{stroke:#333333;fill:none;}#mermaid-1772956202035 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-1772956202035 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#mermaid-1772956202035 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-1772956202035 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#mermaid-1772956202035 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#mermaid-1772956202035 .cluster text{fill:#333;}#mermaid-1772956202035 .cluster span{color:#333;}#mermaid-1772956202035 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-1772956202035 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#mermaid-1772956202035 rect.text{fill:none;stroke-width:0;}#mermaid-1772956202035 .icon-shape,#mermaid-1772956202035 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#mermaid-1772956202035 .icon-shape p,#mermaid-1772956202035 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#mermaid-1772956202035 .icon-shape rect,#mermaid-1772956202035 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#mermaid-1772956202035 .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#mermaid-1772956202035 .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#mermaid-1772956202035 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker id="mermaid-1772956202035_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1772956202035_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1772956202035_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1772956202035_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></circle></marker><marker id="mermaid-1772956202035_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><marker id="mermaid-1772956202035_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"></path></marker><g class="root"><g class="clusters"><g class="cluster" id="外部存储" data-look="classic"><rect style="" x="8" y="187" width="397.203125" height="128"></rect><g class="cluster-label" transform="translate(174.6015625, 187)"><foreignobject width="64" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>外部存储</p></span></div></foreignobject></g></g><g class="cluster" id="subGraph1" data-look="classic"><rect style="" x="425.203125" y="8" width="504.87890625" height="307"></rect><g class="cluster-label" transform="translate(609.666015625, 8)"><foreignobject width="135.953125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Kubernetes Cluster</p></span></div></foreignobject></g></g><g class="cluster" id="subGraph0" data-look="classic"><rect style="" x="445.203125" y="33" width="453.625" height="104"></rect><g class="cluster-label" transform="translate(602.3203125, 33)"><foreignobject width="139.390625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Cognee Service Pod</p></span></div></foreignobject></g></g></g><g class="edgePaths"><path d="M728.438,104.818L710.431,110.182C692.424,115.545,656.411,126.273,638.405,135.803C620.398,145.333,620.398,153.667,620.398,162C620.398,170.333,620.398,178.667,616.664,188.316C612.929,197.966,605.46,208.932,601.725,214.415L597.99,219.898" id="L_API_DB_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_API_DB_0" data-points="W3sieCI6NzI4LjQzNzUsInkiOjEwNC44MTc5NDU4NDkxODMyNn0seyJ4Ijo2MjAuMzk4NDM3NSwieSI6MTM3fSx7IngiOjYyMC4zOTg0Mzc1LCJ5IjoxNjJ9LHsieCI6NjIwLjM5ODQzNzUsInkiOjE4N30seyJ4Ijo1OTUuNzM4NTMzNzU2MzQ2NCwieSI6MjIzLjIwNDM1MTUxMjY1NDA2fV0=" marker-end="url(#mermaid-1772956202035_flowchart-v2-pointEnd)"></path><path d="M769.727,112L765.832,116.167C761.937,120.333,754.146,128.667,750.251,137C746.355,145.333,746.355,153.667,746.355,162C746.355,170.333,746.355,178.667,743.558,187.577C740.76,196.488,735.164,205.975,732.366,210.719L729.568,215.463" id="L_API_Vector_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_API_Vector_0" data-points="W3sieCI6NzY5LjcyNzIzODU4MTczMDcsInkiOjExMn0seyJ4Ijo3NDYuMzU1NDY4NzUsInkiOjEzN30seyJ4Ijo3NDYuMzU1NDY4NzUsInkiOjE2Mn0seyJ4Ijo3NDYuMzU1NDY4NzUsInkiOjE4N30seyJ4Ijo3MjcuNTM2MDc2OTEwNzkzOCwieSI6MjE4LjkwODYyMTMxODYyMDI1fV0=" marker-end="url(#mermaid-1772956202035_flowchart-v2-pointEnd)"></path><path d="M820.851,112L824.845,116.167C828.84,120.333,836.828,128.667,840.822,137C844.816,145.333,844.816,153.667,844.816,162C844.816,170.333,844.816,178.667,844.816,186.797C844.816,194.928,844.816,202.856,844.816,206.82L844.816,210.784" id="L_API_Redis_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_API_Redis_0" data-points="W3sieCI6ODIwLjg1MTE4Njg5OTAzODUsInkiOjExMn0seyJ4Ijo4NDQuODE2NDA2MjUsInkiOjEzN30seyJ4Ijo4NDQuODE2NDA2MjUsInkiOjE2Mn0seyJ4Ijo4NDQuODE2NDA2MjUsInkiOjE4N30seyJ4Ijo4NDQuODE2NDA2MjUsInkiOjIxNC43ODQyNTk3OTYxNDI1OH1d" marker-end="url(#mermaid-1772956202035_flowchart-v2-pointEnd)"></path><path d="M549.694,112L545.122,116.167C540.55,120.333,531.406,128.667,526.834,137C522.262,145.333,522.262,153.667,522.262,162C522.262,170.333,522.262,178.667,467.179,191.498C412.096,204.33,301.93,221.659,246.847,230.324L191.764,238.989" id="L_Worker_Git_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Worker_Git_0" data-points="W3sieCI6NTQ5LjY5MzczNDk3NTk2MTUsInkiOjExMn0seyJ4Ijo1MjIuMjYxNzE4NzUsInkiOjEzN30seyJ4Ijo1MjIuMjYxNzE4NzUsInkiOjE2Mn0seyJ4Ijo1MjIuMjYxNzE4NzUsInkiOjE4N30seyJ4IjoxODcuODEyNSwieSI6MjM5LjYxMDIwNTk0MzA2NTY0fV0=" marker-end="url(#mermaid-1772956202035_flowchart-v2-pointEnd)"></path><path d="M560.078,112L557.109,116.167C554.139,120.333,548.201,128.667,545.231,137C542.262,145.333,542.262,153.667,542.262,162C542.262,170.333,542.262,178.667,514.229,190.363C486.197,202.06,430.131,217.121,402.099,224.651L374.066,232.181" id="L_Worker_S3_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Worker_S3_0" data-points="W3sieCI6NTYwLjA3ODM1MDM2MDU3NjksInkiOjExMn0seyJ4Ijo1NDIuMjYxNzE4NzUsInkiOjEzN30seyJ4Ijo1NDIuMjYxNzE4NzUsInkiOjE2Mn0seyJ4Ijo1NDIuMjYxNzE4NzUsInkiOjE4N30seyJ4IjozNzAuMjAzMTI1LCJ5IjoyMzMuMjE4NTQ5NjY5NjM0MjN9XQ==" marker-end="url(#mermaid-1772956202035_flowchart-v2-pointEnd)"></path><path d="M570.463,112L569.096,116.167C567.729,120.333,564.995,128.667,563.629,137C562.262,145.333,562.262,153.667,562.262,162C562.262,170.333,562.262,178.667,563.013,187.658C563.764,196.65,565.267,206.3,566.018,211.125L566.769,215.95" id="L_Worker_DB_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Worker_DB_0" data-points="W3sieCI6NTcwLjQ2Mjk2NTc0NTE5MjMsInkiOjExMn0seyJ4Ijo1NjIuMjYxNzE4NzUsInkiOjEzN30seyJ4Ijo1NjIuMjYxNzE4NzUsInkiOjE2Mn0seyJ4Ijo1NjIuMjYxNzE4NzUsInkiOjE4N30seyJ4Ijo1NjcuMzg0NjA3MTM2MjQ5NSwieSI6MjE5LjkwMjU3MjEwNDAyMDJ9XQ==" marker-end="url(#mermaid-1772956202035_flowchart-v2-pointEnd)"></path><path d="M614.699,112L620.159,116.167C625.618,120.333,636.538,128.667,641.997,137C647.457,145.333,647.457,153.667,647.457,162C647.457,170.333,647.457,178.667,651.715,188.051C655.973,197.436,664.489,207.872,668.747,213.09L673.005,218.309" id="L_Worker_Vector_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Worker_Vector_0" data-points="W3sieCI6NjE0LjY5ODk5MzM4OTQyMzEsInkiOjExMn0seyJ4Ijo2NDcuNDU3MDMxMjUsInkiOjEzN30seyJ4Ijo2NDcuNDU3MDMxMjUsInkiOjE2Mn0seyJ4Ijo2NDcuNDU3MDMxMjUsInkiOjE4N30seyJ4Ijo2NzUuNTM0MjMwMjE2NDA2MywieSI6MjIxLjQwNzY5Njg0Mzk2MDU0fV0=" marker-end="url(#mermaid-1772956202035_flowchart-v2-pointEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="L_API_DB_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_API_Vector_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_API_Redis_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Worker_Git_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Worker_S3_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Worker_DB_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g><g class="edgeLabel"><g class="label" data-id="L_Worker_Vector_0" transform="translate(0, 0)"><foreignobject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignobject></g></g></g><g class="nodes"><g class="node default" id="flowchart-API-0" transform="translate(794.96875, 85)"><rect class="basic label-container" style="" x="-66.53125" y="-27" width="133.0625" height="54"></rect><g class="label" style="" transform="translate(-36.53125, -12)"><rect></rect><foreignobject width="73.0625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>API Server</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Worker-1" transform="translate(579.3203125, 85)"><rect class="basic label-container" style="" x="-99.1171875" y="-27" width="198.234375" height="54"></rect><g class="label" style="" transform="translate(-69.1171875, -12)"><rect></rect><foreignobject width="138.234375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Background Worker</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-DB-2" transform="translate(572.26171875, 251)"><path d="M0,7.809008079766202 a28.390625,7.809008079766202 0,0,0 56.78125,0 a28.390625,7.809008079766202 0,0,0 -56.78125,0 l0,46.8090080797662 a28.390625,7.809008079766202 0,0,0 56.78125,0 l0,-46.8090080797662" class="basic label-container" style="" transform="translate(-28.390625, -31.2135121196493)"></path><g class="label" style="" transform="translate(-20.890625, -2)"><rect></rect><foreignobject width="41.78125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Neo4j</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Vector-3" transform="translate(706.66796875, 251)"><path d="M0,9.434586349132228 a37.8828125,9.434586349132228 0,0,0 75.765625,0 a37.8828125,9.434586349132228 0,0,0 -75.765625,0 l0,48.43458634913223 a37.8828125,9.434586349132228 0,0,0 75.765625,0 l0,-48.43458634913223" class="basic label-container" style="" transform="translate(-37.8828125, -33.65187952369834)"></path><g class="label" style="" transform="translate(-30.3828125, -2)"><rect></rect><foreignobject width="60.765625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>LanceDB</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Redis-4" transform="translate(844.81640625, 251)"><path d="M0,11.143827074961894 a50.265625,11.143827074961894 0,0,0 100.53125,0 a50.265625,11.143827074961894 0,0,0 -100.53125,0 l0,50.14382707496189 a50.265625,11.143827074961894 0,0,0 100.53125,0 l0,-50.14382707496189" class="basic label-container" style="" transform="translate(-50.265625, -36.21574061244284)"></path><g class="label" style="" transform="translate(-42.765625, -2)"><rect></rect><foreignobject width="85.53125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Redis Cache</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-Git-5" transform="translate(115.40625, 251)"><rect class="basic label-container" style="" x="-72.40625" y="-39" width="144.8125" height="78"></rect><g class="label" style="" transform="translate(-42.40625, -24)"><rect></rect><foreignobject width="84.8125" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>Git Repo<br>knowledge/</p></span></div></foreignobject></g></g><g class="node default" id="flowchart-S3-6" transform="translate(304.0078125, 251)"><rect class="basic label-container" style="" x="-66.1953125" y="-39" width="132.390625" height="78"></rect><g class="label" style="" transform="translate(-36.1953125, -24)"><rect></rect><foreignobject width="72.390625" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>对象存储<br>文档/图片</p></span></div></foreignobject></g></g></g></g></g></svg></div><hr>
+<h2 id="-4-api-设计">🔌 4. API 设计 </h2>
+<h3 id="41-基础信息">4.1 基础信息 </h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Base URL</strong></td>
+<td><code>https://cognee-service.team.com/api/v1</code></td>
+</tr>
+<tr>
+<td><strong>认证方式</strong></td>
+<td>API Key (通过请求头 <code>X-API-Key</code> 传递)</td>
+</tr>
+<tr>
+<td><strong>响应格式</strong></td>
+<td>JSON</td>
+</tr>
+<tr>
+<td><strong>错误格式</strong></td>
+<td><code>{"code": "ERROR_CODE", "message": "错误描述", "details": {}}</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-核心-api-列表">4.2 核心 API 列表 </h3>
+<h4 id="421-知识检索">4.2.1 知识检索 </h4>
+<h5 id="post-search"><code>POST /search</code> </h5>
+<p><strong>描述</strong>：自然语言知识检索</p>
+<p><strong>请求体</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"query"</span><span class="token operator">:</span> <span class="token string">"如何调试 Spring 事务失效问题？"</span><span class="token punctuation">,</span>
+    <span class="token property">"context_type"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"recipes"</span><span class="token punctuation">,</span> <span class="token string">"decisions"</span><span class="token punctuation">,</span> <span class="token string">"memory"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"max_results"</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">"search_type"</span><span class="token operator">:</span> <span class="token string">"insights"</span><span class="token punctuation">,</span>
+    <span class="token property">"filters"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"language"</span><span class="token operator">:</span> <span class="token string">"java"</span><span class="token punctuation">,</span>
+        <span class="token property">"tags"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"spring"</span><span class="token punctuation">,</span> <span class="token string">"transaction"</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>响应</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"request_id"</span><span class="token operator">:</span> <span class="token string">"req_123456"</span><span class="token punctuation">,</span>
+    <span class="token property">"query"</span><span class="token operator">:</span> <span class="token string">"如何调试 Spring 事务失效问题？"</span><span class="token punctuation">,</span>
+    <span class="token property">"results"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"recipe_java_001"</span><span class="token punctuation">,</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"recipe"</span><span class="token punctuation">,</span>
+            <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"如何调试 Spring 事务失效问题"</span><span class="token punctuation">,</span>
+            <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"## 场景\n..."</span><span class="token punctuation">,</span>
+            <span class="token property">"relevance_score"</span><span class="token operator">:</span> <span class="token number">0.95</span><span class="token punctuation">,</span>
+            <span class="token property">"source"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"Recipes/Java/spring-transaction-debug.md"</span><span class="token punctuation">,</span>
+                <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://github.com/team/repo/blob/main/Recipes/Java/spring-transaction-debug.md"</span><span class="token punctuation">,</span>
+                <span class="token property">"last_updated"</span><span class="token operator">:</span> <span class="token string">"2026-02-15T08:00:00Z"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">"entities"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Spring"</span><span class="token punctuation">,</span> <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"framework"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"事务"</span><span class="token punctuation">,</span> <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"concept"</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span><span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"@Transactional"</span><span class="token punctuation">,</span> <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"annotation"</span><span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"related"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token punctuation">{</span><span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"decision_001"</span><span class="token punctuation">,</span> <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"事务管理选型决策"</span><span class="token punctuation">,</span> <span class="token property">"relation"</span><span class="token operator">:</span> <span class="token string">"相关决策"</span><span class="token punctuation">}</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"total"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"processing_time_ms"</span><span class="token operator">:</span> <span class="token number">234</span>
+<span class="token punctuation">}</span>
+</code></pre><h5 id="post-searchsimilar"><code>POST /search/similar</code> </h5>
+<p><strong>描述</strong>：基于文本片段的相似性检索</p>
+<p><strong>请求体</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"text"</span><span class="token operator">:</span> <span class="token string">"public void saveOrder(Order order) { ... }"</span><span class="token punctuation">,</span>
+    <span class="token property">"context_type"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"code"</span><span class="token punctuation">,</span> <span class="token string">"bugs"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"max_results"</span><span class="token operator">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>响应</strong>：类似 <code>/search</code> 格式</p>
+<h4 id="422-知识索引">4.2.2 知识索引 </h4>
+<h5 id="post-index"><code>POST /index</code> </h5>
+<p><strong>描述</strong>：触发知识索引（增量或全量）</p>
+<p><strong>请求体</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"incremental"</span><span class="token punctuation">,</span>
+    <span class="token property">"data_sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"recipes"</span><span class="token punctuation">,</span> <span class="token string">"decisions"</span><span class="token punctuation">,</span> <span class="token string">"knowledge"</span><span class="token punctuation">,</span> <span class="token string">"memory"</span><span class="token punctuation">,</span> <span class="token string">"code"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"force"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre><p><strong>响应</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"job_id"</span><span class="token operator">:</span> <span class="token string">"index_job_001"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"started"</span><span class="token punctuation">,</span>
+    <span class="token property">"estimated_time_seconds"</span><span class="token operator">:</span> <span class="token number">120</span><span class="token punctuation">,</span>
+    <span class="token property">"check_url"</span><span class="token operator">:</span> <span class="token string">"/jobs/index_job_001"</span>
+<span class="token punctuation">}</span>
+</code></pre><h5 id="get-jobsjob_id"><code>GET /jobs/{job_id}</code> </h5>
+<p><strong>描述</strong>：查询索引任务状态</p>
+<p><strong>响应</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"job_id"</span><span class="token operator">:</span> <span class="token string">"index_job_001"</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"completed"</span><span class="token punctuation">,</span>
+    <span class="token property">"progress"</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    <span class="token property">"stats"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"documents_processed"</span><span class="token operator">:</span> <span class="token number">156</span><span class="token punctuation">,</span>
+        <span class="token property">"entities_extracted"</span><span class="token operator">:</span> <span class="token number">1234</span><span class="token punctuation">,</span>
+        <span class="token property">"relations_extracted"</span><span class="token operator">:</span> <span class="token number">567</span><span class="token punctuation">,</span>
+        <span class="token property">"processing_time_ms"</span><span class="token operator">:</span> <span class="token number">125000</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"error"</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre><h4 id="423-知识管理">4.2.3 知识管理 </h4>
+<h5 id="get-health"><code>GET /health</code> </h5>
+<p><strong>描述</strong>：知识图谱健康度报告</p>
+<p><strong>响应</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"overall_score"</span><span class="token operator">:</span> <span class="token number">85</span><span class="token punctuation">,</span>
+    <span class="token property">"datasets"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"recipes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"node_count"</span><span class="token operator">:</span> <span class="token number">450</span><span class="token punctuation">,</span>
+            <span class="token property">"edge_count"</span><span class="token operator">:</span> <span class="token number">890</span><span class="token punctuation">,</span>
+            <span class="token property">"last_updated"</span><span class="token operator">:</span> <span class="token string">"2026-03-01T10:00:00Z"</span><span class="token punctuation">,</span>
+            <span class="token property">"health_score"</span><span class="token operator">:</span> <span class="token number">92</span><span class="token punctuation">,</span>
+            <span class="token property">"issues"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"decisions"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"node_count"</span><span class="token operator">:</span> <span class="token number">78</span><span class="token punctuation">,</span>
+            <span class="token property">"edge_count"</span><span class="token operator">:</span> <span class="token number">156</span><span class="token punctuation">,</span>
+            <span class="token property">"last_updated"</span><span class="token operator">:</span> <span class="token string">"2026-02-28T14:30:00Z"</span><span class="token punctuation">,</span>
+            <span class="token property">"health_score"</span><span class="token operator">:</span> <span class="token number">78</span><span class="token punctuation">,</span>
+            <span class="token property">"issues"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                <span class="token string">"5 个决策节点超过 90 天未更新"</span>
+            <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"recommendations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"建议更新 decisions 数据集，有 5 个节点已过期"</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><h5 id="delete-knowledgeid"><code>DELETE /knowledge/{id}</code> </h5>
+<p><strong>描述</strong>：从知识图谱中删除指定知识节点</p>
+<h5 id="post-knowledge"><code>POST /knowledge</code> </h5>
+<p><strong>描述</strong>：手动添加知识节点</p>
+<p><strong>请求体</strong>：</p>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"recipe"</span><span class="token punctuation">,</span>
+    <span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"如何调试 Spring 事务失效问题"</span><span class="token punctuation">,</span>
+    <span class="token property">"content"</span><span class="token operator">:</span> <span class="token string">"..."</span><span class="token punctuation">,</span>
+    <span class="token property">"entities"</span><span class="token operator">:</span> <span class="token punctuation">[</span>...<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"relations"</span><span class="token operator">:</span> <span class="token punctuation">[</span>...<span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"source_path"</span><span class="token operator">:</span> <span class="token string">"Recipes/Java/spring-transaction-debug.md"</span>
+<span class="token punctuation">}</span>
+</code></pre><hr>
+<h2 id="-5-skill-集成设计">🤖 5. Skill 集成设计 </h2>
+<h3 id="51-skill-调用流程">5.1 Skill 调用流程 </h3>
+<p>以 <code>kb-retriever skill</code> 为例：</p>
+<div class="mermaid" data-processed="true"><svg id="mermaid-1772956202108" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 1123px;" viewBox="-50 -10 1123 509" role="graphics-document document" aria-roledescription="sequence"><g><rect x="873" y="423" fill="#eaeaea" stroke="#666" width="150" height="65" name="Service" rx="3" ry="3" class="actor actor-bottom"></rect><text x="948" y="455.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="948" dy="0">Cognee Service</tspan></text></g><g><rect x="499" y="423" fill="#eaeaea" stroke="#666" width="150" height="65" name="Skill" rx="3" ry="3" class="actor actor-bottom"></rect><text x="574" y="455.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="574" dy="0">kb-retriever skill</tspan></text></g><g><rect x="299" y="423" fill="#eaeaea" stroke="#666" width="150" height="65" name="Copilot" rx="3" ry="3" class="actor actor-bottom"></rect><text x="374" y="455.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="374" dy="0">GitHub Copilot</tspan></text></g><g><rect x="0" y="423" fill="#eaeaea" stroke="#666" width="150" height="65" name="User" rx="3" ry="3" class="actor actor-bottom"></rect><text x="75" y="455.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="75" dy="0">开发者</tspan></text></g><g><line id="actor3" x1="948" y1="65" x2="948" y2="423" class="actor-line 200" stroke-width="0.5px" stroke="#999" name="Service"></line><g id="root-3"><rect x="873" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" name="Service" rx="3" ry="3" class="actor actor-top"></rect><text x="948" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="948" dy="0">Cognee Service</tspan></text></g></g><g><line id="actor2" x1="574" y1="65" x2="574" y2="423" class="actor-line 200" stroke-width="0.5px" stroke="#999" name="Skill"></line><g id="root-2"><rect x="499" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" name="Skill" rx="3" ry="3" class="actor actor-top"></rect><text x="574" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="574" dy="0">kb-retriever skill</tspan></text></g></g><g><line id="actor1" x1="374" y1="65" x2="374" y2="423" class="actor-line 200" stroke-width="0.5px" stroke="#999" name="Copilot"></line><g id="root-1"><rect x="299" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" name="Copilot" rx="3" ry="3" class="actor actor-top"></rect><text x="374" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="374" dy="0">GitHub Copilot</tspan></text></g></g><g><line id="actor0" x1="75" y1="65" x2="75" y2="423" class="actor-line 200" stroke-width="0.5px" stroke="#999" name="User"></line><g id="root-0"><rect x="0" y="0" fill="#eaeaea" stroke="#666" width="150" height="65" name="User" rx="3" ry="3" class="actor actor-top"></rect><text x="75" y="32.5" dominant-baseline="central" alignment-baseline="central" class="actor actor-box" style="text-anchor: middle; font-size: 16px; font-weight: 400;"><tspan x="75" dy="0">开发者</tspan></text></g></g><style>#mermaid-1772956202108{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-1772956202108 .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-1772956202108 .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-1772956202108 .error-icon{fill:#552222;}#mermaid-1772956202108 .error-text{fill:#552222;stroke:#552222;}#mermaid-1772956202108 .edge-thickness-normal{stroke-width:1px;}#mermaid-1772956202108 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-1772956202108 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-1772956202108 .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-1772956202108 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-1772956202108 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-1772956202108 .marker{fill:#333333;stroke:#333333;}#mermaid-1772956202108 .marker.cross{stroke:#333333;}#mermaid-1772956202108 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-1772956202108 p{margin:0;}#mermaid-1772956202108 .actor{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}#mermaid-1772956202108 text.actor&gt;tspan{fill:black;stroke:none;}#mermaid-1772956202108 .actor-line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);}#mermaid-1772956202108 .innerArc{stroke-width:1.5;stroke-dasharray:none;}#mermaid-1772956202108 .messageLine0{stroke-width:1.5;stroke-dasharray:none;stroke:#333;}#mermaid-1772956202108 .messageLine1{stroke-width:1.5;stroke-dasharray:2,2;stroke:#333;}#mermaid-1772956202108 #arrowhead path{fill:#333;stroke:#333;}#mermaid-1772956202108 .sequenceNumber{fill:white;}#mermaid-1772956202108 #sequencenumber{fill:#333;}#mermaid-1772956202108 #crosshead path{fill:#333;stroke:#333;}#mermaid-1772956202108 .messageText{fill:#333;stroke:none;}#mermaid-1772956202108 .labelBox{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}#mermaid-1772956202108 .labelText,#mermaid-1772956202108 .labelText&gt;tspan{fill:black;stroke:none;}#mermaid-1772956202108 .loopText,#mermaid-1772956202108 .loopText&gt;tspan{fill:black;stroke:none;}#mermaid-1772956202108 .loopLine{stroke-width:2px;stroke-dasharray:2,2;stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);}#mermaid-1772956202108 .note{stroke:#aaaa33;fill:#fff5ad;}#mermaid-1772956202108 .noteText,#mermaid-1772956202108 .noteText&gt;tspan{fill:black;stroke:none;}#mermaid-1772956202108 .activation0{fill:#f4f4f4;stroke:#666;}#mermaid-1772956202108 .activation1{fill:#f4f4f4;stroke:#666;}#mermaid-1772956202108 .activation2{fill:#f4f4f4;stroke:#666;}#mermaid-1772956202108 .actorPopupMenu{position:absolute;}#mermaid-1772956202108 .actorPopupMenuPanel{position:absolute;fill:#ECECFF;box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);filter:drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));}#mermaid-1772956202108 .actor-man line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;}#mermaid-1772956202108 .actor-man circle,#mermaid-1772956202108 line{stroke:hsl(259.6261682243, 59.7765363128%, 87.9019607843%);fill:#ECECFF;stroke-width:2px;}#mermaid-1772956202108 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g></g><defs><symbol id="computer" width="24" height="24"><path transform="scale(.5)" d="M2 2v13h20v-13h-20zm18 11h-16v-9h16v9zm-10.228 6l.466-1h3.524l.467 1h-4.457zm14.228 3h-24l2-6h2.104l-1.33 4h18.45l-1.297-4h2.073l2 6zm-5-10h-14v-7h14v7z"></path></symbol></defs><defs><symbol id="database" fill-rule="evenodd" clip-rule="evenodd"><path transform="scale(.5)" d="M12.258.001l.256.004.255.005.253.008.251.01.249.012.247.015.246.016.242.019.241.02.239.023.236.024.233.027.231.028.229.031.225.032.223.034.22.036.217.038.214.04.211.041.208.043.205.045.201.046.198.048.194.05.191.051.187.053.183.054.18.056.175.057.172.059.168.06.163.061.16.063.155.064.15.066.074.033.073.033.071.034.07.034.069.035.068.035.067.035.066.035.064.036.064.036.062.036.06.036.06.037.058.037.058.037.055.038.055.038.053.038.052.038.051.039.05.039.048.039.047.039.045.04.044.04.043.04.041.04.04.041.039.041.037.041.036.041.034.041.033.042.032.042.03.042.029.042.027.042.026.043.024.043.023.043.021.043.02.043.018.044.017.043.015.044.013.044.012.044.011.045.009.044.007.045.006.045.004.045.002.045.001.045v17l-.001.045-.002.045-.004.045-.006.045-.007.045-.009.044-.011.045-.012.044-.013.044-.015.044-.017.043-.018.044-.02.043-.021.043-.023.043-.024.043-.026.043-.027.042-.029.042-.03.042-.032.042-.033.042-.034.041-.036.041-.037.041-.039.041-.04.041-.041.04-.043.04-.044.04-.045.04-.047.039-.048.039-.05.039-.051.039-.052.038-.053.038-.055.038-.055.038-.058.037-.058.037-.06.037-.06.036-.062.036-.064.036-.064.036-.066.035-.067.035-.068.035-.069.035-.07.034-.071.034-.073.033-.074.033-.15.066-.155.064-.16.063-.163.061-.168.06-.172.059-.175.057-.18.056-.183.054-.187.053-.191.051-.194.05-.198.048-.201.046-.205.045-.208.043-.211.041-.214.04-.217.038-.22.036-.223.034-.225.032-.229.031-.231.028-.233.027-.236.024-.239.023-.241.02-.242.019-.246.016-.247.015-.249.012-.251.01-.253.008-.255.005-.256.004-.258.001-.258-.001-.256-.004-.255-.005-.253-.008-.251-.01-.249-.012-.247-.015-.245-.016-.243-.019-.241-.02-.238-.023-.236-.024-.234-.027-.231-.028-.228-.031-.226-.032-.223-.034-.22-.036-.217-.038-.214-.04-.211-.041-.208-.043-.204-.045-.201-.046-.198-.048-.195-.05-.19-.051-.187-.053-.184-.054-.179-.056-.176-.057-.172-.059-.167-.06-.164-.061-.159-.063-.155-.064-.151-.066-.074-.033-.072-.033-.072-.034-.07-.034-.069-.035-.068-.035-.067-.035-.066-.035-.064-.036-.063-.036-.062-.036-.061-.036-.06-.037-.058-.037-.057-.037-.056-.038-.055-.038-.053-.038-.052-.038-.051-.039-.049-.039-.049-.039-.046-.039-.046-.04-.044-.04-.043-.04-.041-.04-.04-.041-.039-.041-.037-.041-.036-.041-.034-.041-.033-.042-.032-.042-.03-.042-.029-.042-.027-.042-.026-.043-.024-.043-.023-.043-.021-.043-.02-.043-.018-.044-.017-.043-.015-.044-.013-.044-.012-.044-.011-.045-.009-.044-.007-.045-.006-.045-.004-.045-.002-.045-.001-.045v-17l.001-.045.002-.045.004-.045.006-.045.007-.045.009-.044.011-.045.012-.044.013-.044.015-.044.017-.043.018-.044.02-.043.021-.043.023-.043.024-.043.026-.043.027-.042.029-.042.03-.042.032-.042.033-.042.034-.041.036-.041.037-.041.039-.041.04-.041.041-.04.043-.04.044-.04.046-.04.046-.039.049-.039.049-.039.051-.039.052-.038.053-.038.055-.038.056-.038.057-.037.058-.037.06-.037.061-.036.062-.036.063-.036.064-.036.066-.035.067-.035.068-.035.069-.035.07-.034.072-.034.072-.033.074-.033.151-.066.155-.064.159-.063.164-.061.167-.06.172-.059.176-.057.179-.056.184-.054.187-.053.19-.051.195-.05.198-.048.201-.046.204-.045.208-.043.211-.041.214-.04.217-.038.22-.036.223-.034.226-.032.228-.031.231-.028.234-.027.236-.024.238-.023.241-.02.243-.019.245-.016.247-.015.249-.012.251-.01.253-.008.255-.005.256-.004.258-.001.258.001zm-9.258 20.499v.01l.001.021.003.021.004.022.005.021.006.022.007.022.009.023.01.022.011.023.012.023.013.023.015.023.016.024.017.023.018.024.019.024.021.024.022.025.023.024.024.025.052.049.056.05.061.051.066.051.07.051.075.051.079.052.084.052.088.052.092.052.097.052.102.051.105.052.11.052.114.051.119.051.123.051.127.05.131.05.135.05.139.048.144.049.147.047.152.047.155.047.16.045.163.045.167.043.171.043.176.041.178.041.183.039.187.039.19.037.194.035.197.035.202.033.204.031.209.03.212.029.216.027.219.025.222.024.226.021.23.02.233.018.236.016.24.015.243.012.246.01.249.008.253.005.256.004.259.001.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241-.014.237-.016.233-.018.231-.021.226-.021.224-.024.22-.026.216-.027.212-.028.21-.031.205-.031.202-.034.198-.034.194-.036.191-.037.187-.039.183-.04.179-.04.175-.042.172-.043.168-.044.163-.045.16-.046.155-.046.152-.047.148-.048.143-.049.139-.049.136-.05.131-.05.126-.05.123-.051.118-.052.114-.051.11-.052.106-.052.101-.052.096-.052.092-.052.088-.053.083-.051.079-.052.074-.052.07-.051.065-.051.06-.051.056-.05.051-.05.023-.024.023-.025.021-.024.02-.024.019-.024.018-.024.017-.024.015-.023.014-.024.013-.023.012-.023.01-.023.01-.022.008-.022.006-.022.006-.022.004-.022.004-.021.001-.021.001-.021v-4.127l-.077.055-.08.053-.083.054-.085.053-.087.052-.09.052-.093.051-.095.05-.097.05-.1.049-.102.049-.105.048-.106.047-.109.047-.111.046-.114.045-.115.045-.118.044-.12.043-.122.042-.124.042-.126.041-.128.04-.13.04-.132.038-.134.038-.135.037-.138.037-.139.035-.142.035-.143.034-.144.033-.147.032-.148.031-.15.03-.151.03-.153.029-.154.027-.156.027-.158.026-.159.025-.161.024-.162.023-.163.022-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.011-.178.01-.179.008-.179.008-.181.006-.182.005-.182.004-.184.003-.184.002h-.37l-.184-.002-.184-.003-.182-.004-.182-.005-.181-.006-.179-.008-.179-.008-.178-.01-.176-.011-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.022-.162-.023-.161-.024-.159-.025-.157-.026-.156-.027-.155-.027-.153-.029-.151-.03-.15-.03-.148-.031-.146-.032-.145-.033-.143-.034-.141-.035-.14-.035-.137-.037-.136-.037-.134-.038-.132-.038-.13-.04-.128-.04-.126-.041-.124-.042-.122-.042-.12-.044-.117-.043-.116-.045-.113-.045-.112-.046-.109-.047-.106-.047-.105-.048-.102-.049-.1-.049-.097-.05-.095-.05-.093-.052-.09-.051-.087-.052-.085-.053-.083-.054-.08-.054-.077-.054v4.127zm0-5.654v.011l.001.021.003.021.004.021.005.022.006.022.007.022.009.022.01.022.011.023.012.023.013.023.015.024.016.023.017.024.018.024.019.024.021.024.022.024.023.025.024.024.052.05.056.05.061.05.066.051.07.051.075.052.079.051.084.052.088.052.092.052.097.052.102.052.105.052.11.051.114.051.119.052.123.05.127.051.131.05.135.049.139.049.144.048.147.048.152.047.155.046.16.045.163.045.167.044.171.042.176.042.178.04.183.04.187.038.19.037.194.036.197.034.202.033.204.032.209.03.212.028.216.027.219.025.222.024.226.022.23.02.233.018.236.016.24.014.243.012.246.01.249.008.253.006.256.003.259.001.26-.001.257-.003.254-.006.25-.008.247-.01.244-.012.241-.015.237-.016.233-.018.231-.02.226-.022.224-.024.22-.025.216-.027.212-.029.21-.03.205-.032.202-.033.198-.035.194-.036.191-.037.187-.039.183-.039.179-.041.175-.042.172-.043.168-.044.163-.045.16-.045.155-.047.152-.047.148-.048.143-.048.139-.05.136-.049.131-.05.126-.051.123-.051.118-.051.114-.052.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.051.07-.052.065-.051.06-.05.056-.051.051-.049.023-.025.023-.024.021-.025.02-.024.019-.024.018-.024.017-.024.015-.023.014-.023.013-.024.012-.022.01-.023.01-.023.008-.022.006-.022.006-.022.004-.021.004-.022.001-.021.001-.021v-4.139l-.077.054-.08.054-.083.054-.085.052-.087.053-.09.051-.093.051-.095.051-.097.05-.1.049-.102.049-.105.048-.106.047-.109.047-.111.046-.114.045-.115.044-.118.044-.12.044-.122.042-.124.042-.126.041-.128.04-.13.039-.132.039-.134.038-.135.037-.138.036-.139.036-.142.035-.143.033-.144.033-.147.033-.148.031-.15.03-.151.03-.153.028-.154.028-.156.027-.158.026-.159.025-.161.024-.162.023-.163.022-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.011-.178.009-.179.009-.179.007-.181.007-.182.005-.182.004-.184.003-.184.002h-.37l-.184-.002-.184-.003-.182-.004-.182-.005-.181-.007-.179-.007-.179-.009-.178-.009-.176-.011-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.022-.162-.023-.161-.024-.159-.025-.157-.026-.156-.027-.155-.028-.153-.028-.151-.03-.15-.03-.148-.031-.146-.033-.145-.033-.143-.033-.141-.035-.14-.036-.137-.036-.136-.037-.134-.038-.132-.039-.13-.039-.128-.04-.126-.041-.124-.042-.122-.043-.12-.043-.117-.044-.116-.044-.113-.046-.112-.046-.109-.046-.106-.047-.105-.048-.102-.049-.1-.049-.097-.05-.095-.051-.093-.051-.09-.051-.087-.053-.085-.052-.083-.054-.08-.054-.077-.054v4.139zm0-5.666v.011l.001.02.003.022.004.021.005.022.006.021.007.022.009.023.01.022.011.023.012.023.013.023.015.023.016.024.017.024.018.023.019.024.021.025.022.024.023.024.024.025.052.05.056.05.061.05.066.051.07.051.075.052.079.051.084.052.088.052.092.052.097.052.102.052.105.051.11.052.114.051.119.051.123.051.127.05.131.05.135.05.139.049.144.048.147.048.152.047.155.046.16.045.163.045.167.043.171.043.176.042.178.04.183.04.187.038.19.037.194.036.197.034.202.033.204.032.209.03.212.028.216.027.219.025.222.024.226.021.23.02.233.018.236.017.24.014.243.012.246.01.249.008.253.006.256.003.259.001.26-.001.257-.003.254-.006.25-.008.247-.01.244-.013.241-.014.237-.016.233-.018.231-.02.226-.022.224-.024.22-.025.216-.027.212-.029.21-.03.205-.032.202-.033.198-.035.194-.036.191-.037.187-.039.183-.039.179-.041.175-.042.172-.043.168-.044.163-.045.16-.045.155-.047.152-.047.148-.048.143-.049.139-.049.136-.049.131-.051.126-.05.123-.051.118-.052.114-.051.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.052.07-.051.065-.051.06-.051.056-.05.051-.049.023-.025.023-.025.021-.024.02-.024.019-.024.018-.024.017-.024.015-.023.014-.024.013-.023.012-.023.01-.022.01-.023.008-.022.006-.022.006-.022.004-.022.004-.021.001-.021.001-.021v-4.153l-.077.054-.08.054-.083.053-.085.053-.087.053-.09.051-.093.051-.095.051-.097.05-.1.049-.102.048-.105.048-.106.048-.109.046-.111.046-.114.046-.115.044-.118.044-.12.043-.122.043-.124.042-.126.041-.128.04-.13.039-.132.039-.134.038-.135.037-.138.036-.139.036-.142.034-.143.034-.144.033-.147.032-.148.032-.15.03-.151.03-.153.028-.154.028-.156.027-.158.026-.159.024-.161.024-.162.023-.163.023-.165.021-.166.02-.167.019-.169.018-.169.017-.171.016-.173.015-.173.014-.175.013-.175.012-.177.01-.178.01-.179.009-.179.007-.181.006-.182.006-.182.004-.184.003-.184.001-.185.001-.185-.001-.184-.001-.184-.003-.182-.004-.182-.006-.181-.006-.179-.007-.179-.009-.178-.01-.176-.01-.176-.012-.175-.013-.173-.014-.172-.015-.171-.016-.17-.017-.169-.018-.167-.019-.166-.02-.165-.021-.163-.023-.162-.023-.161-.024-.159-.024-.157-.026-.156-.027-.155-.028-.153-.028-.151-.03-.15-.03-.148-.032-.146-.032-.145-.033-.143-.034-.141-.034-.14-.036-.137-.036-.136-.037-.134-.038-.132-.039-.13-.039-.128-.041-.126-.041-.124-.041-.122-.043-.12-.043-.117-.044-.116-.044-.113-.046-.112-.046-.109-.046-.106-.048-.105-.048-.102-.048-.1-.05-.097-.049-.095-.051-.093-.051-.09-.052-.087-.052-.085-.053-.083-.053-.08-.054-.077-.054v4.153zm8.74-8.179l-.257.004-.254.005-.25.008-.247.011-.244.012-.241.014-.237.016-.233.018-.231.021-.226.022-.224.023-.22.026-.216.027-.212.028-.21.031-.205.032-.202.033-.198.034-.194.036-.191.038-.187.038-.183.04-.179.041-.175.042-.172.043-.168.043-.163.045-.16.046-.155.046-.152.048-.148.048-.143.048-.139.049-.136.05-.131.05-.126.051-.123.051-.118.051-.114.052-.11.052-.106.052-.101.052-.096.052-.092.052-.088.052-.083.052-.079.052-.074.051-.07.052-.065.051-.06.05-.056.05-.051.05-.023.025-.023.024-.021.024-.02.025-.019.024-.018.024-.017.023-.015.024-.014.023-.013.023-.012.023-.01.023-.01.022-.008.022-.006.023-.006.021-.004.022-.004.021-.001.021-.001.021.001.021.001.021.004.021.004.022.006.021.006.023.008.022.01.022.01.023.012.023.013.023.014.023.015.024.017.023.018.024.019.024.02.025.021.024.023.024.023.025.051.05.056.05.06.05.065.051.07.052.074.051.079.052.083.052.088.052.092.052.096.052.101.052.106.052.11.052.114.052.118.051.123.051.126.051.131.05.136.05.139.049.143.048.148.048.152.048.155.046.16.046.163.045.168.043.172.043.175.042.179.041.183.04.187.038.191.038.194.036.198.034.202.033.205.032.21.031.212.028.216.027.22.026.224.023.226.022.231.021.233.018.237.016.241.014.244.012.247.011.25.008.254.005.257.004.26.001.26-.001.257-.004.254-.005.25-.008.247-.011.244-.012.241-.014.237-.016.233-.018.231-.021.226-.022.224-.023.22-.026.216-.027.212-.028.21-.031.205-.032.202-.033.198-.034.194-.036.191-.038.187-.038.183-.04.179-.041.175-.042.172-.043.168-.043.163-.045.16-.046.155-.046.152-.048.148-.048.143-.048.139-.049.136-.05.131-.05.126-.051.123-.051.118-.051.114-.052.11-.052.106-.052.101-.052.096-.052.092-.052.088-.052.083-.052.079-.052.074-.051.07-.052.065-.051.06-.05.056-.05.051-.05.023-.025.023-.024.021-.024.02-.025.019-.024.018-.024.017-.023.015-.024.014-.023.013-.023.012-.023.01-.023.01-.022.008-.022.006-.023.006-.021.004-.022.004-.021.001-.021.001-.021-.001-.021-.001-.021-.004-.021-.004-.022-.006-.021-.006-.023-.008-.022-.01-.022-.01-.023-.012-.023-.013-.023-.014-.023-.015-.024-.017-.023-.018-.024-.019-.024-.02-.025-.021-.024-.023-.024-.023-.025-.051-.05-.056-.05-.06-.05-.065-.051-.07-.052-.074-.051-.079-.052-.083-.052-.088-.052-.092-.052-.096-.052-.101-.052-.106-.052-.11-.052-.114-.052-.118-.051-.123-.051-.126-.051-.131-.05-.136-.05-.139-.049-.143-.048-.148-.048-.152-.048-.155-.046-.16-.046-.163-.045-.168-.043-.172-.043-.175-.042-.179-.041-.183-.04-.187-.038-.191-.038-.194-.036-.198-.034-.202-.033-.205-.032-.21-.031-.212-.028-.216-.027-.22-.026-.224-.023-.226-.022-.231-.021-.233-.018-.237-.016-.241-.014-.244-.012-.247-.011-.25-.008-.254-.005-.257-.004-.26-.001-.26.001z"></path></symbol></defs><defs><symbol id="clock" width="24" height="24"><path transform="scale(.5)" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.848 12.459c.202.038.202.333.001.372-1.907.361-6.045 1.111-6.547 1.111-.719 0-1.301-.582-1.301-1.301 0-.512.77-5.447 1.125-7.445.034-.192.312-.181.343.014l.985 6.238 5.394 1.011z"></path></symbol></defs><defs><marker id="arrowhead" refX="7.9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M -1 0 L 10 5 L 0 10 z"></path></marker></defs><defs><marker id="crosshead" markerWidth="15" markerHeight="8" orient="auto" refX="4" refY="4.5"><path fill="none" stroke="#000000" stroke-width="1pt" d="M 1,2 L 6,7 M 6,2 L 1,7" style="stroke-dasharray: 0, 0;"></path></marker></defs><defs><marker id="filled-head" refX="15.5" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><defs><marker id="sequencenumber" refX="15" refY="15" markerWidth="60" markerHeight="40" orient="auto"><circle cx="15" cy="15" r="6"></circle></marker></defs><text x="223" y="80" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" class="messageText" dy="1em" style="font-size: 16px; font-weight: 400;">"从知识库查找 IDAAS 灵活菜单"</text><line x1="76" y1="109" x2="370" y2="109" class="messageLine0" stroke-width="2" stroke="none" marker-end="url(#arrowhead)" style="fill: none;"></line><text x="473" y="124" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" class="messageText" dy="1em" style="font-size: 16px; font-weight: 400;">调用 skill</text><line x1="375" y1="153" x2="570" y2="153" class="messageLine0" stroke-width="2" stroke="none" marker-end="url(#arrowhead)" style="fill: none;"></line><text x="760" y="168" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" class="messageText" dy="1em" style="font-size: 16px; font-weight: 400;">POST /search {"query": "IDAAS 灵活菜单"}</text><line x1="575" y1="197" x2="944" y2="197" class="messageLine0" stroke-width="2" stroke="none" marker-end="url(#arrowhead)" style="fill: none;"></line><text x="763" y="212" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" class="messageText" dy="1em" style="font-size: 16px; font-weight: 400;">返回结构化结果</text><line x1="947" y1="241" x2="578" y2="241" class="messageLine1" stroke-width="2" stroke="none" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line><text x="575" y="256" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" class="messageText" dy="1em" style="font-size: 16px; font-weight: 400;">格式化结果</text><path d="M 575,285 C 635,275 635,315 575,305" class="messageLine0" stroke-width="2" stroke="none" marker-end="url(#arrowhead)" style="fill: none;"></path><text x="476" y="330" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" class="messageText" dy="1em" style="font-size: 16px; font-weight: 400;">返回答案</text><line x1="573" y1="359" x2="378" y2="359" class="messageLine1" stroke-width="2" stroke="none" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line><text x="226" y="374" text-anchor="middle" dominant-baseline="middle" alignment-baseline="middle" class="messageText" dy="1em" style="font-size: 16px; font-weight: 400;">显示答案及来源</text><line x1="373" y1="403" x2="79" y2="403" class="messageLine1" stroke-width="2" stroke="none" marker-end="url(#arrowhead)" style="stroke-dasharray: 3, 3; fill: none;"></line></svg></div><h3 id="52-skill-代码示例">5.2 Skill 代码示例 </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token comment"># .github/skills/kb-retriever/skill.py</span>
+
+<span class="token keyword keyword-import">import</span> os
+<span class="token keyword keyword-import">import</span> httpx
+<span class="token keyword keyword-from">from</span> typing <span class="token keyword keyword-import">import</span> List<span class="token punctuation">,</span> Dict<span class="token punctuation">,</span> Any
+
+<span class="token keyword keyword-class">class</span> <span class="token class-name">CogneeServiceClient</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""Cognee 知识服务客户端"""</span>
+    
+    <span class="token keyword keyword-def">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> base_url<span class="token punctuation">:</span> <span class="token builtin">str</span> <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> api_key<span class="token punctuation">:</span> <span class="token builtin">str</span> <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        self<span class="token punctuation">.</span>base_url <span class="token operator">=</span> base_url <span class="token keyword keyword-or">or</span> os<span class="token punctuation">.</span>getenv<span class="token punctuation">(</span><span class="token string">"COGNEE_SERVICE_URL"</span><span class="token punctuation">,</span> <span class="token string">"http://localhost:8000/api/v1"</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>api_key <span class="token operator">=</span> api_key <span class="token keyword keyword-or">or</span> os<span class="token punctuation">.</span>getenv<span class="token punctuation">(</span><span class="token string">"COGNEE_API_KEY"</span><span class="token punctuation">)</span>
+        self<span class="token punctuation">.</span>client <span class="token operator">=</span> httpx<span class="token punctuation">.</span>AsyncClient<span class="token punctuation">(</span>timeout<span class="token operator">=</span><span class="token number">30.0</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword keyword-async">async</span> <span class="token keyword keyword-def">def</span> <span class="token function">search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> query<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">,</span> context_type<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> max_results<span class="token punctuation">:</span> <span class="token builtin">int</span> <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> Dict<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">,</span> Any<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""自然语言搜索"""</span>
+        headers <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"X-API-Key"</span><span class="token punctuation">:</span> self<span class="token punctuation">.</span>api_key<span class="token punctuation">}</span>
+        payload <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token string">"query"</span><span class="token punctuation">:</span> query<span class="token punctuation">,</span>
+            <span class="token string">"context_type"</span><span class="token punctuation">:</span> context_type <span class="token keyword keyword-or">or</span> <span class="token punctuation">[</span><span class="token string">"knowledge"</span><span class="token punctuation">,</span> <span class="token string">"recipes"</span><span class="token punctuation">,</span> <span class="token string">"decisions"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token string">"max_results"</span><span class="token punctuation">:</span> max_results<span class="token punctuation">,</span>
+            <span class="token string">"search_type"</span><span class="token punctuation">:</span> <span class="token string">"insights"</span>
+        <span class="token punctuation">}</span>
+        
+        response <span class="token operator">=</span> <span class="token keyword keyword-await">await</span> self<span class="token punctuation">.</span>client<span class="token punctuation">.</span>post<span class="token punctuation">(</span>
+            <span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">{</span>self<span class="token punctuation">.</span>base_url<span class="token punctuation">}</span></span><span class="token string">/search"</span></span><span class="token punctuation">,</span>
+            json<span class="token operator">=</span>payload<span class="token punctuation">,</span>
+            headers<span class="token operator">=</span>headers
+        <span class="token punctuation">)</span>
+        response<span class="token punctuation">.</span>raise_for_status<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword keyword-return">return</span> response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword keyword-async">async</span> <span class="token keyword keyword-def">def</span> <span class="token function">close</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword keyword-await">await</span> self<span class="token punctuation">.</span>client<span class="token punctuation">.</span>aclose<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword keyword-async">async</span> <span class="token keyword keyword-def">def</span> <span class="token function">kb_retriever_skill</span><span class="token punctuation">(</span>query<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">str</span><span class="token punctuation">:</span>
+    <span class="token triple-quoted-string string">"""
+    kb-retriever skill 主函数
+    
+    Args:
+        query: 用户的问题，如 "IDAAS 灵活菜单"
+    
+    Returns:
+        格式化的答案
+    """</span>
+    client <span class="token operator">=</span> CogneeServiceClient<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    
+    <span class="token keyword keyword-try">try</span><span class="token punctuation">:</span>
+        <span class="token comment"># 1. 调用 Cognee 服务</span>
+        result <span class="token operator">=</span> <span class="token keyword keyword-await">await</span> client<span class="token punctuation">.</span>search<span class="token punctuation">(</span>query<span class="token punctuation">)</span>
+        
+        <span class="token comment"># 2. 格式化结果</span>
+        <span class="token keyword keyword-if">if</span> <span class="token keyword keyword-not">not</span> result<span class="token punctuation">[</span><span class="token string">"results"</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            <span class="token keyword keyword-return">return</span> <span class="token string">"未找到相关信息"</span>
+        
+        formatted <span class="token operator">=</span> <span class="token string-interpolation"><span class="token string">f"## 关于「</span><span class="token interpolation"><span class="token punctuation">{</span>query<span class="token punctuation">}</span></span><span class="token string">」的知识检索结果\n\n"</span></span>
+        
+        <span class="token keyword keyword-for">for</span> item <span class="token keyword keyword-in">in</span> result<span class="token punctuation">[</span><span class="token string">"results"</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            formatted <span class="token operator">+=</span> <span class="token string-interpolation"><span class="token string">f"### </span><span class="token interpolation"><span class="token punctuation">{</span>item<span class="token punctuation">[</span><span class="token string">'title'</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">\n"</span></span>
+            formatted <span class="token operator">+=</span> <span class="token string-interpolation"><span class="token string">f"</span><span class="token interpolation"><span class="token punctuation">{</span>item<span class="token punctuation">[</span><span class="token string">'content'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token format-spec">300]</span><span class="token punctuation">}</span></span><span class="token string">...\n"</span></span>
+            formatted <span class="token operator">+=</span> <span class="token string-interpolation"><span class="token string">f"*来源: [</span><span class="token interpolation"><span class="token punctuation">{</span>item<span class="token punctuation">[</span><span class="token string">'type'</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">] </span><span class="token interpolation"><span class="token punctuation">{</span>item<span class="token punctuation">[</span><span class="token string">'source'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token string">'path'</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">*\n"</span></span>
+            
+            <span class="token keyword keyword-if">if</span> item<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'related'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                formatted <span class="token operator">+=</span> <span class="token string-interpolation"><span class="token string">f"*相关: </span><span class="token interpolation"><span class="token punctuation">{</span><span class="token string">', '</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span>r<span class="token punctuation">[</span><span class="token string">'title'</span><span class="token punctuation">]</span> <span class="token keyword keyword-for">for</span> r <span class="token keyword keyword-in">in</span> item<span class="token punctuation">[</span><span class="token string">'related'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">}</span></span><span class="token string">*\n"</span></span>
+            
+            formatted <span class="token operator">+=</span> <span class="token string">"\n"</span>
+        
+        formatted <span class="token operator">+=</span> <span class="token string-interpolation"><span class="token string">f"\n&gt; 检索耗时: </span><span class="token interpolation"><span class="token punctuation">{</span>result<span class="token punctuation">[</span><span class="token string">'processing_time_ms'</span><span class="token punctuation">]</span><span class="token punctuation">}</span></span><span class="token string">ms"</span></span>
+        
+        <span class="token keyword keyword-return">return</span> formatted
+        
+    <span class="token keyword keyword-finally">finally</span><span class="token punctuation">:</span>
+        <span class="token keyword keyword-await">await</span> client<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><hr>
+<h2 id="-6-数据模型">📊 6. 数据模型 </h2>
+<h3 id="61-核心实体类型">6.1 核心实体类型 </h3>
+<table>
+<thead>
+<tr>
+<th>实体类型</th>
+<th>描述</th>
+<th>属性示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Recipe</code></td>
+<td>Prompt 配方</td>
+<td>title, language, tags, author, created_at</td>
+</tr>
+<tr>
+<td><code>Decision</code></td>
+<td>架构决策记录</td>
+<td>title, date, status, impact</td>
+</tr>
+<tr>
+<td><code>Concept</code></td>
+<td>业务概念</td>
+<td>name, definition, domain</td>
+</tr>
+<tr>
+<td><code>Code</code></td>
+<td>代码片段</td>
+<td>language, file_path, function_name</td>
+</tr>
+<tr>
+<td><code>Bug</code></td>
+<td>Bug 记录</td>
+<td>severity, status, fix_version</td>
+</tr>
+<tr>
+<td><code>Person</code></td>
+<td>团队成员</td>
+<td>name, role, expertise</td>
+</tr>
+<tr>
+<td><code>Project</code></td>
+<td>项目模块</td>
+<td>name, tech_stack, owner</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62-核心关系类型">6.2 核心关系类型 </h3>
+<table>
+<thead>
+<tr>
+<th>关系类型</th>
+<th>源实体</th>
+<th>目标实体</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RELATES_TO</code></td>
+<td>任意</td>
+<td>任意</td>
+<td>一般关联</td>
+</tr>
+<tr>
+<td><code>IMPLEMENTS</code></td>
+<td>Code</td>
+<td>Decision</td>
+<td>代码实现了某个决策</td>
+</tr>
+<tr>
+<td><code>FIXES</code></td>
+<td>Code</td>
+<td>Bug</td>
+<td>代码修复了某个 Bug</td>
+</tr>
+<tr>
+<td><code>MENTIONS</code></td>
+<td>Recipe</td>
+<td>Concept</td>
+<td>Recipe 提到了某个概念</td>
+</tr>
+<tr>
+<td><code>AUTHORED_BY</code></td>
+<td>Recipe/Decision</td>
+<td>Person</td>
+<td>知识由谁创建</td>
+</tr>
+<tr>
+<td><code>DEPENDS_ON</code></td>
+<td>Project</td>
+<td>Concept/Code</td>
+<td>项目依赖</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-7-安全与权限">🔒 7. 安全与权限 </h2>
+<h3 id="71-认证机制">7.1 认证机制 </h3>
+<ul>
+<li><strong>API Key 认证</strong>：每个 Skill/Agent 使用独立的 API Key</li>
+<li><strong>Key 管理</strong>：通过内部管理平台生成/吊销 Key</li>
+<li><strong>请求签名</strong>：可选，对敏感操作增加签名验证</li>
+</ul>
+<h3 id="72-权限控制">7.2 权限控制 </h3>
+<table>
+<thead>
+<tr>
+<th>权限级别</th>
+<th>允许的操作</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read</code></td>
+<td>检索知识</td>
+<td>所有 Skill/Agent</td>
+</tr>
+<tr>
+<td><code>write</code></td>
+<td>添加/更新知识</td>
+<td>知识沉淀命令 (<code>/remember</code>, <code>/index</code>)</td>
+</tr>
+<tr>
+<td><code>admin</code></td>
+<td>删除知识、查看健康度</td>
+<td>CCG 成员、Tech Leader</td>
+</tr>
+</tbody>
+</table>
+<h3 id="73-数据安全">7.3 数据安全 </h3>
+<ul>
+<li>所有知识数据存储在内部网络，不对外暴露</li>
+<li>敏感代码片段脱敏处理</li>
+<li>审计日志记录所有写操作</li>
+</ul>
+<hr>
+<h2 id="-8-非功能需求">📈 8. 非功能需求 </h2>
+<h3 id="81-性能指标">8.1 性能指标 </h3>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>目标值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>检索 P95 延迟</strong></td>
+<td>&lt; 500ms</td>
+<td>95% 的检索请求在 500ms 内返回</td>
+</tr>
+<tr>
+<td><strong>索引吞吐量</strong></td>
+<td>&gt; 100 文档/分钟</td>
+<td>增量索引能力</td>
+</tr>
+<tr>
+<td><strong>并发请求</strong></td>
+<td>&gt; 50 QPS</td>
+<td>支持团队同时使用</td>
+</tr>
+<tr>
+<td><strong>可用性</strong></td>
+<td>99.9%</td>
+<td>核心服务 SLA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-可扩展性">8.2 可扩展性 </h3>
+<ul>
+<li>知识图谱支持水平扩展（Neo4j 集群）</li>
+<li>向量索引支持分片（LanceDB 支持 S3 存储）</li>
+<li>无状态 API 服务，支持水平扩容</li>
+</ul>
+<h3 id="83-可观测性">8.3 可观测性 </h3>
+<ul>
+<li><strong>日志</strong>：结构化日志，包含 request_id</li>
+<li><strong>指标</strong>：Prometheus 格式，包含 QPS、延迟、错误率</li>
+<li><strong>追踪</strong>：支持 OpenTelemetry 分布式追踪</li>
+<li><strong>告警</strong>：错误率 &gt; 1% 告警，延迟 &gt; 1s 告警</li>
+</ul>
+<hr>
+<h2 id="️-9-实施计划">🗓️ 9. 实施计划 </h2>
+<h3 id="91-阶段划分">9.1 阶段划分 </h3>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>时间</th>
+<th>主要内容</th>
+<th>交付物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Phase 1: MVP</strong></td>
+<td>Week 1-2</td>
+<td>基础 API + 知识检索</td>
+<td>可用的检索服务，支持场景 12</td>
+</tr>
+<tr>
+<td><strong>Phase 2: 索引能力</strong></td>
+<td>Week 3-4</td>
+<td>增量索引 + 数据源集成</td>
+<td>自动从 Git 同步知识</td>
+</tr>
+<tr>
+<td><strong>Phase 3: 管理能力</strong></td>
+<td>Week 5-6</td>
+<td>健康度监控 + 管理 API</td>
+<td>健康度仪表盘，支持场景 11/14</td>
+</tr>
+<tr>
+<td><strong>Phase 4: Skill 改造</strong></td>
+<td>Week 7-8</td>
+<td>改造现有 Skill 接入新服务</td>
+<td>所有 Skill 完成迁移</td>
+</tr>
+</tbody>
+</table>
+<h3 id="92-里程碑">9.2 里程碑 </h3>
+<table>
+<thead>
+<tr>
+<th>里程碑</th>
+<th>预计完成时间</th>
+<th>验收标准</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1: 服务上线可用</td>
+<td>Week 2</td>
+<td><code>kb-retriever</code> 可成功调用服务检索知识</td>
+</tr>
+<tr>
+<td>M2: 自动同步机制</td>
+<td>Week 4</td>
+<td>PR merge 后自动触发增量索引</td>
+</tr>
+<tr>
+<td>M3: 健康度可观测</td>
+<td>Week 6</td>
+<td>可输出季度 OKR 所需的健康度数据</td>
+</tr>
+<tr>
+<td>M4: 全场景覆盖</td>
+<td>Week 8</td>
+<td>场景 1-14 中涉及知识检索的都已改造</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-10-测试策略">🧪 10. 测试策略 </h2>
+<h3 id="101-测试类型">10.1 测试类型 </h3>
+<table>
+<thead>
+<tr>
+<th>测试类型</th>
+<th>覆盖范围</th>
+<th>工具</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>单元测试</strong></td>
+<td>API 服务核心逻辑</td>
+<td>pytest</td>
+</tr>
+<tr>
+<td><strong>集成测试</strong></td>
+<td>Cognee + 数据库集成</td>
+<td>pytest + docker-compose</td>
+</tr>
+<tr>
+<td><strong>性能测试</strong></td>
+<td>检索延迟、并发能力</td>
+<td>locust / k6</td>
+</tr>
+<tr>
+<td><strong>端到端测试</strong></td>
+<td>Skill 调用全流程</td>
+<td>手动 + 自动化脚本</td>
+</tr>
+</tbody>
+</table>
+<h3 id="102-测试数据集">10.2 测试数据集 </h3>
+<p>准备标准测试数据集：</p>
+<ul>
+<li>50 个 Prompt Recipes</li>
+<li>20 个架构决策记录</li>
+<li>30 个业务概念定义</li>
+<li>10 个 Bug 记录</li>
+<li>5 个完整项目上下文</li>
+</ul>
+<hr>
+<h2 id="-11-附录">📝 11. 附录 </h2>
+<h3 id="111-环境变量配置">11.1 环境变量配置 </h3>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token comment"># Cognee Service 配置</span>
+<span class="token assign-left variable">COGNEE_SERVICE_PORT</span><span class="token operator">=</span><span class="token number">8000</span>
+<span class="token assign-left variable">COGNEE_API_KEYS</span><span class="token operator">=</span>key1:read,key2:write,key3:admin
+
+<span class="token comment"># Cognee 核心配置</span>
+<span class="token assign-left variable">LLM_API_KEY</span><span class="token operator">=</span>sk-xxx
+<span class="token assign-left variable">LLM_MODEL</span><span class="token operator">=</span>qwen-max
+<span class="token assign-left variable">LLM_PROVIDER</span><span class="token operator">=</span>dashscope
+<span class="token assign-left variable">EMBEDDING_PROVIDER</span><span class="token operator">=</span>dashscope
+<span class="token assign-left variable">EMBEDDING_MODEL</span><span class="token operator">=</span>text-embedding-v2
+
+<span class="token comment"># 数据库配置</span>
+<span class="token assign-left variable">NEO4J_URI</span><span class="token operator">=</span>bolt://localhost:7687
+<span class="token assign-left variable">NEO4J_USER</span><span class="token operator">=</span>neo4j
+<span class="token assign-left variable">NEO4J_PASSWORD</span><span class="token operator">=</span>password
+<span class="token assign-left variable">VECTOR_DB_PROVIDER</span><span class="token operator">=</span>lancedb
+<span class="token assign-left variable">VECTOR_DB_PATH</span><span class="token operator">=</span>/data/lancedb
+
+<span class="token comment"># 数据源配置</span>
+<span class="token assign-left variable">KNOWLEDGE_REPO_PATH</span><span class="token operator">=</span>/data/knowledge-repo
+<span class="token assign-left variable">SYNC_INTERVAL_MINUTES</span><span class="token operator">=</span><span class="token number">15</span>
+</code></pre><h3 id="112-相关文档索引">11.2 相关文档索引 </h3>
+<ul>
+<li><a href="file:///C:/Workspace/private-project/github-copilot%E6%8F%90%E6%95%88/AGENTS.md">Everything for Copilot 框架总览</a></li>
+<li><a href="https://docs.cognee.ai/">Cognee 官方文档</a></li>
+<li><a href="https://docs.litellm.ai/">LiteLLM 文档</a></li>
+<li><a href="https://neo4j.com/docs">Neo4j 文档</a></li>
+</ul>
+<h3 id="113-术语表">11.3 术语表 </h3>
+<table>
+<thead>
+<tr>
+<th>术语</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cognee</strong></td>
+<td>基于图谱的 RAG 框架，用于构建 AI 记忆系统</td>
+</tr>
+<tr>
+<td><strong>GraphRAG</strong></td>
+<td>结合知识图谱和向量检索的增强检索生成技术</td>
+</tr>
+<tr>
+<td><strong>Skill</strong></td>
+<td>Everything for Copilot 框架中的专业技能单元</td>
+</tr>
+<tr>
+<td><strong>Agent</strong></td>
+<td>智能代理，组合多个 Skill 完成复杂任务</td>
+</tr>
+<tr>
+<td><strong>Memory Bank</strong></td>
+<td>项目知识沉淀的存储位置</td>
+</tr>
+<tr>
+<td><strong>Prompt Recipe</strong></td>
+<td>固化的高质量 Prompt 模板</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-12-未来规划">✨ 12. 未来规划 </h2>
+<h3 id="121-phase-5-功能展望">12.1 Phase 5+ 功能展望 </h3>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>描述</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>多租户支持</strong></td>
+<td>不同项目组隔离的知识空间</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>知识推荐</strong></td>
+<td>根据上下文主动推荐相关知识</td>
+<td>中</td>
+</tr>
+<tr>
+<td><strong>图谱可视化</strong></td>
+<td>Web 界面查看知识图谱</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>LLM 缓存</strong></td>
+<td>缓存常见问题的答案</td>
+<td>低</td>
+</tr>
+<tr>
+<td><strong>跨项目知识继承</strong></td>
+<td>基础架构知识被子项目继承</td>
+<td>低</td>
+</tr>
+</tbody>
+</table>
+<h3 id="122-与-okr-对齐">12.2 与 OKR 对齐 </h3>
+<table>
+<thead>
+<tr>
+<th>OKR</th>
+<th>如何对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KR: Memory Bank 核心服务知识刷新 ≥ X 条</td>
+<td>通过健康度报告可量化统计</td>
+</tr>
+<tr>
+<td>KR: Prompt Recipes 新增 ≥ 10 条</td>
+<td>通过实体统计可量化</td>
+</tr>
+<tr>
+<td>KR: Recipes 反哺 Agent 更新 ≥ 2 次</td>
+<td>通过知识关联度分析</td>
+</tr>
+<tr>
+<td>KR: 覆盖率门禁路径配置完整度 100%</td>
+<td>通过知识图谱完整性检查</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>文档结束</strong></p>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  <div class="mermaidTooltip" style="opacity: 0;"></div></body></html>
